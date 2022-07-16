@@ -17,7 +17,27 @@
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
   <script src="./Hostel_files/jquery.mousewheel.min.js.download"></script><script src="./Hostel_files/jquery.mousewheel.min.js(1).download"></script></head>
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
  <style>
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 .rd-navbar-brand{
   font: 1em sans-serif;
   font-size: 30px;
@@ -94,14 +114,14 @@
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                         <li class="rd-nav-item active"><a class="rd-nav-link" href="http://127.0.0.1:5500/index.html">Home</a>
+                         <li class="rd-nav-item active"><a class="rd-nav-link" href="Hostel.html">Home</a>
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="menu.html">MENU</a>
                       
                     </li>
                     
                     
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contact Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="http://127.0.0.1:5500/contact-us.html">Contact Us</a>
                     </li>
                     
                  
@@ -123,18 +143,124 @@
             <div class="col-md-6 col-lg-4">
               <article class="box-icon-modern">
                 
-                <h5 class="box-icon-modern-title"><a href="mess.html">MESS</a></h5>
+                <button class="box-icon-modern-title" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">MESS MENU</button>
+
                 <div class="box-icon-modern-decor"></div>
-                <p class="box-icon-modern-text">OPEN THE MESS PORTAL</p>
+
+                <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                         
+                          <h4 class="modal-title"><b><u> MESS MENU</u></b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                  <th>Company</th>
+                                  <th>Contact</th>
+                                  <th>Country</th>
+                                </tr>
+                                <tr>
+                                  <td>Alfreds Futterkiste</td>
+                                  <td>Maria Anders</td>
+                                  <td>Germany</td>
+                                </tr>
+                                <tr>
+                                  <td>Centro comercial Moctezuma</td>
+                                  <td>Francisco Chang</td>
+                                  <td>Mexico</td>
+                                </tr>
+                                <tr>
+                                  <td>Ernst Handel</td>
+                                  <td>Roland Mendel</td>
+                                  <td>Austria</td>
+                                </tr>
+                                <tr>
+                                  <td>Island Trading</td>
+                                  <td>Helen Bennett</td>
+                                  <td>UK</td>
+                                </tr>
+                                <tr>
+                                  <td>Laughing Bacchus Winecellars</td>
+                                  <td>Yoshi Tannamuri</td>
+                                  <td>Canada</td>
+                                </tr>
+                                <tr>
+                                  <td>Magazzini Alimentari Riuniti</td>
+                                  <td>Giovanni Rovelli</td>
+                                  <td>Italy</td>
+                                </tr>
+                              </table>
+
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+              
               </article>
             </div>
             
             <div class="col-md-6 col-lg-4">
               <article class="box-icon-modern">
                 
-                <h5 class="box-icon-modern-title"><a href="canteen.html">CANTEEN</a></h5>
+                <button class="box-icon-modern-title" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">CANTEEN MENU</button>
                 <div class="box-icon-modern-decor"></div>
-                <p class="box-icon-modern-text">OPEN THE CANTEEN PORTAL</p>
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                         
+                          <h4 class="modal-title"><b><u> CANTEEN MENU</u></b></h4>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <tr>
+                                  <th>Company</th>
+                                  <th>Contact</th>
+                                  <th>Country</th>
+                                </tr>
+                                <tr>
+                                  <td>Alfreds Futterkiste</td>
+                                  <td>Maria Anders</td>
+                                  <td>Germany</td>
+                                </tr>
+                                <tr>
+                                  <td>Centro comercial Moctezuma</td>
+                                  <td>Francisco Chang</td>
+                                  <td>Mexico</td>
+                                </tr>
+                                <tr>
+                                  <td>Ernst Handel</td>
+                                  <td>Roland Mendel</td>
+                                  <td>Austria</td>
+                                </tr>
+                                <tr>
+                                  <td>Island Trading</td>
+                                  <td>Helen Bennett</td>
+                                  <td>UK</td>
+                                </tr>
+                                <tr>
+                                  <td>Laughing Bacchus Winecellars</td>
+                                  <td>Yoshi Tannamuri</td>
+                                  <td>Canada</td>
+                                </tr>
+                                <tr>
+                                  <td>Magazzini Alimentari Riuniti</td>
+                                  <td></td>
+                                  <td>Italy</td>
+                                </tr>
+                              </table>
+
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+               
               </article>
             </div>
           </div>
@@ -279,23 +405,7 @@
 	}
 	// ]]>
 </script><a href="http://127.0.0.1:5500/Hostel.html#" id="ui-to-top" class="ui-to-top fa fa-angle-up"></a>
-<script>
-  /* When the user clicks on the button, 
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
-  </script>
+
 
 
 </body></html>
